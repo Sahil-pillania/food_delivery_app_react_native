@@ -1,8 +1,8 @@
 const module = {
   colors: {
     col1: "white",
-    col2: "red",
-    col3: "gray",
+    text1: "red",
+    text2: "gray",
   },
   titles: {
     title1: 30,
@@ -20,8 +20,7 @@ const module = {
   },
   hr80: {
     width: "80%",
-    height: 1,
-    backgroundColor: "gray",
+    backgroundColor: "#fff",
     borderBottomWidth: 1,
     marginVertical: 20,
   },
