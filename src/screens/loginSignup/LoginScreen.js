@@ -21,6 +21,7 @@ const LoginScreen = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.head1}>Login </Text>
       {/* input fields  */}
+      {/* email  */}
       <View style={styles.inputBox}>
         <AntDesign
           name="user"
@@ -36,6 +37,8 @@ const LoginScreen = ({ navigation }) => {
           }}
         />
       </View>
+
+      {/* password  */}
       <View style={styles.inputBox}>
         <FontAwesome
           name="key"
@@ -60,6 +63,7 @@ const LoginScreen = ({ navigation }) => {
           }}
         />
       </View>
+
       {/* button  */}
       <TouchableOpacity style={module.btn1}>
         <Text
@@ -170,6 +174,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginVertical: 40,
     paddingVertical: 10,
+    borderRadius: 15,
   },
 });
 export default LoginScreen;
