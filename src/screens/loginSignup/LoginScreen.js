@@ -12,7 +12,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 
-const LoginScreen = () => {
+const LoginScreen = ({ navigation }) => {
   const [emailFocus, setEmailFocus] = useState(false);
   const [passwordFocus, setPasswordFocus] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -97,7 +97,10 @@ const LoginScreen = () => {
         </TouchableOpacity>
       </View>
       <View style={[module.hr80, styles.signupOpt]}>
-        <Text style={styles.signup}>
+        <Text
+          style={styles.signup}
+          onPress={() => navigation.navigate("signup")}
+        >
           Don't have an account?
           <Text style={{ color: module.colors.text1 }}> Sign Up</Text>
         </Text>
