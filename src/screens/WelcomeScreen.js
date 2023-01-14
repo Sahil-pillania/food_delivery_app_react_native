@@ -4,7 +4,7 @@ import image from "../../assets/food.png";
 // import { colors, hr80 } from "../globals/style";
 import module from "../globals/style";
 
-const WelcomeScreen = () => {
+const WelcomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome to Hungers</Text>
@@ -16,10 +16,10 @@ const WelcomeScreen = () => {
       <View style={module.hr80} />
 
       <View style={styles.btn}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("signup")}>
           <Text style={styles.Btns}> Signup</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("login")}>
           <Text style={styles.Btns}> Log In</Text>
         </TouchableOpacity>
       </View>
