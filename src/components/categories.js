@@ -39,7 +39,7 @@ const Categories = () => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: module.colors.col1,
-    width: "90%",
+    width: "100%",
     elevation: 10,
     borderRadius: 10,
   },
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: 330,
+    width: 370,
     height: 300,
     borderRadius: 10,
     marginTop: 10,
