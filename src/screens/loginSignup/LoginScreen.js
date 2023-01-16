@@ -65,7 +65,10 @@ const LoginScreen = ({ navigation }) => {
       </View>
 
       {/* button  */}
-      <TouchableOpacity style={module.btn1}>
+      <TouchableOpacity
+        style={module.btn1}
+        onPress={() => navigation.navigate("home")}
+      >
         <Text
           style={{
             color: module.colors.col1,
