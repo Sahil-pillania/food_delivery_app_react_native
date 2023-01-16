@@ -3,6 +3,7 @@ const module = {
     col1: "white",
     text1: "red",
     text2: "gray",
+    text3: "black",
   },
   titles: {
     title1: 30,
